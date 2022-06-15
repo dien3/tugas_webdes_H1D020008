@@ -1,0 +1,493 @@
+*{box-sizing: border-box;}
+body{
+	margin: 0 auto;
+	width: 100%;
+	float: left;
+	background-color: #F5F5DC;
+	text-align: left;
+	line-height: 1;
+	font-family: Poppins;}
+header{
+	float: right;
+	width: 100%;
+	height: 100px;
+	padding: 10px;
+	padding-left: 35px;
+	position: fixed;
+	z-index: 1;
+	background-color: white;
+	border-bottom: 2px solid #DEB887;
+	box-shadow: 15px -18px 15px 15px #DEB887;
+}
+section{
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+}
+.container{
+	position: relative;
+	margin-top: 90px;
+}
+#showtoc{
+	width: auto;
+	height: auto;
+	display: none;
+	padding: 20px;
+}
+#ikonhide{
+	display: none;
+}
+
+#kiri img{
+	width: 70px;
+	border-radius: 50%;
+	background-color: #DEB887;
+}
+#kanan{
+	width: 90%;
+	height: auto;
+	float: right;
+	position: relative;
+	right: 0;
+	margin-top: -60px;
+}
+.navside{
+	width: 18%;
+	float: left;
+	padding: 10px;
+	margin-top: 8px;
+	border-radius: 1%;
+	border: 1.5px solid #DEB887;
+	background-color: white;}
+.navside1{
+	width: 20%;
+	height: 500px;
+	float: left;
+	padding: 10px;
+	margin-top: 8px;
+	border-radius: 1%;
+	border: 1.5px solid #DEB887;
+	background-color: white;
+}
+#tengah{
+	width: 62%;
+	min-height: 390px;
+	background-color: white;
+	text-align: justify;
+	float: left;
+	padding: 10px;
+	margin: 8px 5px 20px 5px;
+	border-radius: 1%;
+	border: 1.5px solid #DEB887;}
+.rf{
+	width: 100%;
+	float: left;}
+.kiri{
+	width: 40%;
+	float: left;}
+.kiri img{
+	width: 200px;
+	height: auto;
+	position: relative;
+	border: 1px solid #DEB887;
+	background-color: #FFEFD5 ;
+	opacity: 80%;
+	margin: 20px 0px 30px 30px;
+}
+.kanan{
+	width: 60%;
+	float: left;
+	padding: 5px 10px;
+	margin-bottom: 30px;
+	position: relative;}
+hr{
+	border: 0.5px solid #DEB887;}
+#up{
+	font-size: 30px;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	border-radius: 50px;
+	padding: 8px;
+	background-color: #DEB887;
+	right: 50px;
+	bottom: 40px;
+	position: fixed;
+	float: left;
+	border: 1px solid white;}
+footer{
+	width: 100%;
+	height: 100px;
+	position: relative;
+	bottom: 0px;
+	float: left;
+	text-align: center;
+	background-color: #DEB887;}
+footer hr{
+	border:1px solid white;
+}
+footer a{
+	text-decoration: none;
+	padding-top: 20px;
+	color: black;}
+@media screen and (max-width: 980px){
+	.kanan, .kiri{
+		width: 100%;	
+	}
+	.kiri img{
+		margin-bottom: 0px;
+	}
+}
+@media screen and (max-width: 780px){
+	header{
+		padding: 3px;
+		font-size: 10px;
+		padding-left: 15px;}
+	img{
+		width: 60px;
+		margin: 12px;}
+	.navside{
+		display: none;
+		width: 5%;}
+	#tengah{
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;}
+	#up{
+		right: 20px;
+		bottom: 20px;}
+	#kanan ul{
+		margin-top: -10px;
+	}
+	.menu3{
+		top: -15px;
+	}
+	.kiri img{
+		margin-bottom: 0px;
+	}
+}
+
+@media screen and (max-width: 600px){
+	#kanan ul{
+		display: none;}
+	a img{
+		width: 200px;
+		padding: 26px 26px 26px;}
+	.menu3{
+		top: -15px;}
+	#tengah{
+		min-height: 450px;
+	}
+	.tfilm{
+		width: 100%;
+	}
+	.kiri img{
+		margin-bottom: 0px;
+	}
+	table.ffilm{
+		padding: 0px;
+	}
+}
+
+
+ul{
+	margin-left: 190px;
+	list-style-type: none;
+	margin: 0;
+	padding-left: 0;
+	margin-top: 5px;
+	float: left;
+}
+li{
+	position: absolute;
+	display: inline;
+	float: left;
+	line-height: 1.5;
+	text-align: center;
+	color: black;
+	font-size: 12px;
+	font-weight: 450;
+	max-width: 80px;
+	max-height: 50px;
+	padding: 0px 5px 0px 5px;
+	font-family: Poppins;
+}
+a:hover,button:hover{
+	color: lightblue;
+}
+li:hover{
+	background-color: #F5F5DC;
+}
+button{
+	border: none;
+	padding: 3px 5px;
+	background-color: green;
+	font-family: Poppins;
+}
+button a{
+	text-decoration: none;
+	color: black;
+}
+a{
+	cursor: pointer;
+	font-family: Poppins;
+	color: black;
+}
+.fakun, .ffilm{
+	width: 100%;
+	margin: 0 auto;
+	float: left;
+	padding: 0px 20px;
+}
+input[type=checkbox]{
+	max-width: 30px;
+}
+.flow{
+	height: 100px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+
+/* button */
+#opsi button.tambah,  
+#opsi button.edit, 
+#opsi button.hapus,
+#opsi button.tambah a,  
+#opsi button.edit a,  
+#opsi button.hapus a, 
+#opsi button.free{
+	font-weight: bold;
+	font-family: Poppins;
+	color: white;
+}
+#opsi button.tambah:hover,  
+#opsi button.edit:hover,  
+#opsi button.hapus:hover, 
+#opsi button.free:hover,
+#opsi button.tambah a:hover,  
+#opsi button.edit a:hover, 
+#opsi button.hapus a:hover{
+	font-weight: bold;
+	font-family: Poppins;
+	color: black;
+}
+#opsi button.free{
+	background-color: blue;
+	word-wrap: break-word;
+	width: 70px;
+}
+.free:hover{
+	background-color: darkblue;
+}
+#opsi button.tambah{
+	background-color: green;
+	word-wrap: break-word;
+	width: 70px;
+}
+.tambah:hover{
+	background-color: darkgreen;
+}
+#opsi button.edit, button.edit{
+	background-color: orange;
+	width: auto;
+}
+.edit:hover{
+	background-color: darkorange;
+}
+#opsi button.hapus{
+	background-color: red;
+}
+.hapus:hover{
+	background-color: darkred;
+}
+input, button[type=submit] {
+	font-family: Poppins;
+	padding: 5px;
+	margin: 5px;
+	width: 100%;
+}
+button[type=submit]{
+	font-weight: bold;
+	background-color: #DEB887;
+	color: white;
+	cursor: pointer;
+}
+button[type=submit]:hover{
+	background-color: #F5F5DC;
+	color: black;
+}
+
+
+/*	menukecil	*/
+.topnav{ 
+	overflow: hidden;
+	background-color: white;
+	float: left;
+	height: 100%;
+	width: 0px;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	position: fixed;
+	transition: 0.5s;
+}
+.topnav a{
+	display: block;
+	float: left;
+	color: #56585C;
+	text-align: left;
+	padding: 15px 0px 15px 15px;
+	text-decoration: none;
+	background-color: white;
+	font-size: 13px;
+	font-weight: bold;
+	width: 100%;
+	transition: 0.3s;
+	border-bottom: 1px solid lightgray;
+}
+.topnav a:hover{
+	color: blue;
+}
+.topnav a:first-child{ /*ikonmenuX*/
+	height: 40px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+/*mencari*/
+.drop2 {
+	position: relative;
+	display: inline-block;
+	float: left;
+}
+.mydrop2{
+	display: none;
+	float: left;
+	position: absolute;
+	background-color: #f6f6f6;
+	width: 275px;
+	margin: 0.1rem;
+	margin-left: -200px;
+	overflow: hidden;
+	border: 1px solid #ddd;
+	z-index: 1;
+}
+#inputnya {
+	box-sizing: border-box;
+	font-size: 16px;
+	padding: 14px 5px 12px 5px;
+	border: none;
+	border-bottom: 1px solid #ddd;
+}
+.show{
+	display: block;
+}
+
+/* menu garis 3 */
+.menu3{
+	text-align: center;
+	color: black;
+	position: relative;
+	margin-top: -10px;
+	font-size: 20px;
+	text-decoration: none;
+	float: left;
+}
+/* menufull - ul.satu - li - ul.keluar - li - a */
+#menufull{
+	margin: 0 auto;
+	height: 100%;
+}
+.satu{
+	margin-left: 70px;
+	list-style-type: none;
+	float: left;
+	position: inherit;
+	display: block;
+	/*height: 70px;*/
+	/*margin-top: -60px;*/
+}
+.satu li{
+	margin: 0 auto;
+	position: relative;
+	float: left;
+	display: inline-block;
+}
+.satu li a{
+	display: inline-block;
+	text-decoration: none;
+	padding: 10px 5px;
+	min-height: 50px;
+}
+.satu li a:hover{
+	color: lightblue;
+}
+		
+/* dropdown */
+.satu li ul{/*.keluar*/
+	display: none;
+	position: absolute;
+	float: left;
+	width: 150px;
+	padding: 1px 0px;
+	left: -3px;
+	margin-top: 0.01rem;
+	background-color: white;
+	box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+	/*z-index: 1;*/
+}
+.satu li ul:hover{
+	position: absolute;
+}
+.satu li ul li{ /*.keluar*/
+	width: 140px;
+	top: 0px;
+	margin-top: 0.1rem;
+	position: relative;
+	/*background-color: red;*/
+}
+.satu li ul li:hover{
+	background-color: white;
+}
+.satu li ul li a{/*.keluar*/
+	position: relative;
+	float: left;
+	font-size: 13px;
+	font-weight: bold;
+	font-family: Poppins;
+	color: #56585C;
+	width: 140px;
+	height: 20px;
+	text-decoration: none;
+	border-bottom: 1px solid lightgray;
+	/*padding: 5px 0px 5px 5px;*/
+}
+.satu li ul li a: hover{
+	color: lightblue;
+}
+.satu li:nth-child(5):hover .keluar{ /*user*/
+	display: block;
+}
+
+
+.material-icons{
+	color: black;
+	position: absolute;
+}
+.satu li:hover{
+	color: lightblue;
+}
+.satu .cari{
+	cursor: pointer;
+	float: left;
+	height: 100%;
+	padding-top: 18px;
+}
+
+#m3{
+	padding-top: 5px;
+	right: 50px;
+	top: 20px;
+	position: absolute;
+}
