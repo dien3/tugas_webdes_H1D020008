@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tugas_H1D020008</title>
+	<link rel="stylesheet" type="text/css" href="webdes.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="webdes.js"></script>
+</head>
+<body>
+
+<header>
+	<div id="kiri">
+		<img src="lodg.png">
+	</div>
+	<div id="kanan">
+		<div id="menufull">
+			<ul class="satu">
+				<li><a href="?id=1">Beranda</a></li>
+				<li><a href="?hlm=belum&id=1">Belum Ditonton</a></li>
+				<li><a href="?hlm=sudah&id=1">Sudah Ditonton</a></li>
+				<li><a href="?hlm=akun&id=1">Akun</a></li>
+				<li style="padding-right: 20px;"><a href="">dieny<span><i class="material-icons">&#xe5cf;</i></span></a>
+					<ul class="keluar">
+						<li><a href="logout.php">Keluar</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div id="m3">
+				<a href="javascript:void(0);" class="menu3" onclick="lihatmenu()">☰</a>
+			</div>
+		</div>
+	</div>
+
+	<div id="menukecil" class="topnav">
+		<a href="javascript:void(0);" onclick="tutupmenu()" class="ikonmenuX" style="font-size: 20px">&#10006;</span></a>
+		<a href="?id=1">Beranda</a>
+		<a href="?hlm=belum&id=1">Belum Ditonton</a>
+		<a href="?hlm=sudah&id=1">Sudah Ditonton</a>
+		<a href="?hlm=akun&id=1">Akun</a>
+		<a href="logout.php">Keluar</a>
+	</div> 
+
+</header>
+
+<section class="container">
+	<div class="navside">
+		<h1 style="padding: 20px;">Halo <?= $row['username']; ?>, Anda sekarang sedang menggunakan Aplikasi Galeri Film</h1>
+		<br>
+	</div>
+
+	<div id="tengah">
+<section>
+	
+	<h1>Galeri Film</h1>
+	<div id="opsi"><button class="tambah" name="tambah"><a href="?hlm=tambah&id=1">Tambah</a></button></div>
+	<br><br>
+		<div class="rf">
+		<div class="kiri">
+			<img src='lodg.png'><br><br> 		</div>
+		<div class="kanan">
+			<h3><font size="1" style="font-weight: normal;">1</font>HALO</h3>
+			<h6>⭐ 7 | 2022-03-24 | Action, Adventure, Sci-Fi</h6>
+			<p>Aliens threaten human existence in an epic 26th-century shutdown.</p>
+			<h6>Creator: Steven Kane, Kyle Killen<br>Aktor: Pablo Schreiber, Shabana Azmi, Natasha Culzac, etc. </h6>
+			<div id="opsi">
+			Opsi: <button class="edit" name="edit"><a href="edit.php">Edit</a></button> | <button class="hapus" name="hapus"><a href="hapus.php">Hapus</a></button> | 
+			<form method="post" >
+				<div hidden>
+				<input type="text" name="id" value="1">
+				<input type="text" name="idg" value="1">
+				<input type="text" name="idf" value="1">
+				<!-- <input type="text" name="judul" value="">
+				<input type="date" name="tgl_input" value="tgl_input"]; ?>"> -->
+				<input type="text" name="status" value="Sudah Ditonton">
+				</div>
+				<button type="submit" class="free" name="tandai">Tandai</button> <font size="1">*Tandai sudah ditonton</font>
+			</div>
+			</form>
+		</div>
+	</div>
+		
+	<br><hr><br>
+	<div class="rf">
+		<div class="kiri">
+						<img src="https://artworks.thetvdb.com/banners/v4/series/371028/icons/60914d0fb6634.png"><br><br>
+					</div>
+		<div class="kanan">
+			<h3><font size="1" style="font-weight: normal;">2</font>Arcane: League of Legends</h3>
+			<h6>⭐ 9 | 2021-01-01 | Animation, Action, Adventure, Drama, Fantasy, Sci-Fi</h6>
+			<p>The delicate balance between the rich city of Piltover and the seedy underbelly of Zaun. Tensions between these city-states boil over with the creation of hextech a way for any person to control magical energy in Piltover, and in Zaun, a new drug called shimmer transforms humans into monsters. The rivalry between the cities splits families and friends as Arcane brings life to the relationships that shape some of League of Legends' famous champions including Vi, Jinx, Caitlyn, Jayce and Viktor.</p>
+			<h6>Creator: Riot Games<br>Aktor: Hailee Steinfeld, Kevin Alejandro, Jason Spisak, etc. </h6>
+			<div id="opsi">
+			Opsi: <button class="edit" name="edit"><a href="edit.php">Edit</a></button> | <button class="hapus" name="hapus"><a href="hapus.php">Hapus</a></button> | 
+			<form method="post" >
+				<div hidden>
+				<input type="text" name="id" value="1">
+				<input type="text" name="idg" value="2">
+				<input type="text" name="idf" value="2">
+				<!-- <input type="text" name="judul" value="">
+				<input type="date" name="tgl_input" value="tgl_input"]; ?>"> -->
+				<input type="text" name="status" value="Sudah Ditonton">
+				</div>
+				<button type="submit" class="free" name="tandai">Tandai</button> <font size="1">*Tandai sudah ditonton</font>
+			</div>
+			</form>
+		</div>
+	</div>
+		
+	<br><hr><br>
+	<div class="rf">
+		<div class="kiri">
+						<img src="https://somoskudasai.com/wp-content/uploads/2020/09/Eh1k1CtVkAA80nA-1-edit.jpeg"><br><br>
+					</div>
+		<div class="kanan">
+			<h3><font size="1" style="font-weight: normal;">9</font>Jujutsu Kaisen</h3>
+			<h6>⭐ 8 | 2020-10-02 | Animation, Adventure, action, Fantasy</h6>
+			<p>Yuji Itadori, a kind-hearted teenager, joins his school's Occult Club for fun, but discovers that its members are actual sorcerers who can manipulate the energy between beings for their own use. He hears about a cursed talisman - the finger of Sukuna, a demon - and its being targeted by other cursed beings. Yuji eats the finger to protect his friends, and ends up becoming Sukuna's host. However, Yuji discovers that he has inherited magic and is able to control this power without interference from Sukuna. He joins the Tokyo Metropolitan Magic Technical College to consumes all of Sukuna's fingers, which will enable a full exorcism to take place that will free him.
+</p>
+			<h6>Creator: TOHO Animation<br>Aktor: Junya Enoki, Adam McArthur, Yuichi Nakamura, Yuma Uchida, etc. </h6>
+			<div id="opsi">
+			Opsi: <button class="edit" name="edit"><a href="edit.php">Edit</a></button> | <button class="hapus" name="hapus"><a href="hapus.php">Hapus</a></button> | 
+			<form method="post" >
+				<div hidden>
+				<input type="text" name="id" value="1">
+				<input type="text" name="idg" value="9">
+				<input type="text" name="idf" value="9">
+				<!-- <input type="text" name="judul" value="">
+				<input type="date" name="tgl_input" value="tgl_input"]; ?>"> -->
+				<input type="text" name="status" value="Sudah Ditonton">
+				</div>
+				<button type="submit" class="free" name="tandai">Tandai</button> <font size="1">*Tandai sudah ditonton</font>
+			</div>
+			</form>
+		</div>
+	</div>
+		
+	<br><hr><br>
+	<div class="rf">
+		<div class="kiri">
+						<img src="https://cdn.beahero.gg/2020/09/Shingeki-no-Kyojin-Saison-Finale-anime-image.jpg"><br><br>
+					</div>
+		<div class="kanan">
+			<h3><font size="1" style="font-weight: normal;">13</font>Attack on Titan: Shingeki no Kyojin</h3>
+			<h6>⭐ 9 | 2013-01-01 | Drama, Action, Horror, Fantasy, Adventure, Animation</h6>
+			<p>Humans are nearly exterminated by giant creatures called Titans. Titans are typically several stories tall, seem to have no intelligence, devour human beings and, worst of all, seem to do it for the pleasure rather than as a food source. A small percentage of humanity survived by walling themselves in a land protected by extremely high walls, even taller than the biggest of titans. Flash forward to the present, and mankind has not seen a titan in over 100 years. One day, 10 year old Eren and his foster sister Mikasa witness something horrific as the city walls are destroyed by a colossal titan that appears out of thin air. As the smaller titans flood the city, the two kids watch in horror as their mother is eaten alive. Eren vows that he will murder every single titan and take revenge for all of mankind.</p>
+			<h6>Creator: Hajime Isayama<br>Aktor: Josh Grelle, Yuki Kaji, Yui Ishikawa, etc. </h6>
+			<div id="opsi">
+			Opsi: <button class="edit" name="edit"><a href="edit.php">Edit</a></button> | <button class="hapus" name="hapus"><a href="hapus.php">Hapus</a></button> | 
+			<form method="post" >
+				<div hidden>
+				<input type="text" name="id" value="1">
+				<input type="text" name="idg" value="10">
+				<input type="text" name="idf" value="13">
+				<!-- <input type="text" name="judul" value="">
+				<input type="date" name="tgl_input" value="tgl_input"]; ?>"> -->
+				<input type="text" name="status" value="Sudah Ditonton">
+				</div>
+				<button type="submit" class="free" name="tandai">Tandai</button> <font size="1">*Tandai sudah ditonton</font>
+			</div>
+			</form>
+		</div>
+	</div>
+		
+	<br><hr><br>
+</section>
+
+	</div>
+
+	<div class="navside">
+		
+		<p align="center">klik untuk baca <a href="javascript:void(0);" onclick="lihatpanduan()" id="ikonshow">Panduan</a><a href="javascript:void(0);" onclick="tutuppanduan()" id="ikonhide">Panduan</a></p>
+			<div id="showtoc" class="toc">
+				<p>Aplikasi ini merupakan aplikasi untuk menyimpan list daftar film yang ingin ditonton. Anda dapat menambah list film baru melalui halaman Belum Ditonton. Jika Anda sudah menonton film tersebut, Anda bisa melakukan klaim Sudah Ditonton terhadap list film tertentu. Untuk melihat list film yang Sudah Anda tonton bisa dilihat melalui halaman Sudah Ditonton.</p>
+
+				<p>Fitur:<br>
+					1. Belum Ditonton: Menampilkan daftar list film yang belum ditonton<br>
+					2. Sudah Ditonton: Menampilkan daftar list film yang sudah ditonton<br>
+					3. Akun: Menampilkan informasi akun<br>
+					4. Keluar: Log out dari aplikasi<br>
+				</p>
+			</div>
+	</div>
+</section>
+<footer style="padding-left: 10%; padding-right: 10%;">
+	<font color="white" style="
+	text-align: center;
+	margin-left: 10%;
+	">
+<hr>H1D020008 | Dieny 'Izzaty | Web Design D</font>
+<div id="up"><a href="#">⇪</a></div>
+</footer>
+</body>
+</html>
